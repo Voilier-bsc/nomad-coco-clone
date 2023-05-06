@@ -1,0 +1,270 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-page {
+  margin: 30px 20px;
+  background-color: white;
+  width: 100%;
+  height: 600px;
+  border-radius: 15px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main-page:first-child {
+  position: relative;
+}
+
+.status-bar {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.status-bar > div {
+  width: 40px;
+  height: 40px;
+}
+
+.main-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img {
+  object-fit: cover;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.main-title {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.main-genre {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(155, 155, 155);
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon > div {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  margin: 20px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon__shuffle {
+  background-color: black;
+  color: white;
+}
+
+.like-icon {
+  /* background-color: black; */
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon__like {
+  background-color: antiquewhite;
+}
+
+.play-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.play-list__item {
+  display: flex;
+  background-color: beige;
+  width: 97%;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.play-list__item__img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.play-list__item__text {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+  width: 100px;
+}
+
+.play-list__item__singer {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: rgb(155, 155, 155);
+}
+
+.play-list__item__menu {
+  width: 10px;
+  height: 50px;
+  border-radius: 20px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+.pl-bar {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  background-color: black;
+  width: 270px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+.pl-bar__text {
+  font-weight: 600;
+}
+.pl-bar__text > p:first-child {
+  color: rgb(155, 155, 155);
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.pl-bar__text > p:nth-child(2) {
+  color: white;
+}
+
+.pl-bar__icons {
+  background-color: wheat;
+  width: 100px;
+  height: 50px;
+
+  margin-left: 50px;
+}
+
+.main-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-page:nth-child(2) .main-img {
+  margin-top: 40px;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.main-title {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.main-genre {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(155, 155, 155);
+}
+.play-bar {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-bar-min {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgb(155, 155, 155);
+}
+
+/* .pl-bar-len {
+  width: 300px;
+  height: 40px;
+} */
+
+.play-bar-len__overall {
+  margin-top: 10px;
+  background-color: rgb(155, 155, 155);
+  height: 5px;
+  width: 270px;
+}
+
+.play-bar-len__overall > div {
+  width: 200px;
+  height: 5px;
+  position: relative;
+}
+
+.play-bar-len__cir {
+  height: 10px;
+
+  width: 10px;
+  position: absolute;
+  right: -5px;
+  bottom: -3px;
+  border-radius: 50%;
+}
+.play-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 50px;
+  height: 60px;
+  width: 100%;
+}
+
+.play-icons > div {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+.play-icons > div:nth-child(3) {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  border-radius: 50%;
+}
